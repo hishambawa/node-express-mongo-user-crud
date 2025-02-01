@@ -3,7 +3,7 @@ const {MongoClient, ObjectId} = require('mongodb');
 class UserDao {
     constructor() {
         // get the db client
-        const url = process.env.DB_URL || 'mongodb+srv://hisham:pokerface0958@dev-testing.fxa8kl2.mongodb.net/?retryWrites=true&w=majority&appName=dev-testing';
+        const url = process.env.DB_URL || '';
         const client = new MongoClient(url);
         
         // connect to the database
